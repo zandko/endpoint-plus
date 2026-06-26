@@ -13,6 +13,25 @@
     "url": "git+https://github.com/zandko/endpoint-plus.git",
     "directory": "packages/endpoint-plus"
   },
+  "keywords": [
+    "fetch",
+    "http-client",
+    "request",
+    "typescript",
+    "type-safe",
+    "typegen",
+    "cross-platform",
+    "miniapp",
+    "uni-app",
+    "wechat-miniprogram",
+    "axios",
+    "sse",
+    "server-sent-events",
+    "refresh-token",
+    "cache",
+    "devtools",
+    "vite"
+  ],
   "files": [
     "dist",
     "README.md",
