@@ -1,6 +1,6 @@
 {
   "name": "endpoint-plus-devtools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vite DevTools companion plugin for endpoint-plus, featuring API scanner and automated TypeScript type generation.",
   "publishConfig": {
     "access": "public",
@@ -50,7 +50,6 @@
     "@vue/compiler-sfc": "^3.5.35",
     "@vueuse/core": "^14.3.0",
     "endpoint-plus": "workspace:*",
-
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "es-toolkit": "^1.47.0",

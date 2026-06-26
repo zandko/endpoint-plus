@@ -1,6 +1,6 @@
 {
   "name": "endpoint-plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adapter-based HTTP endpoint toolkit for structured API interactions.",
   "author": "Zan <zandko@126.com>",
   "license": "MIT",
@@ -83,7 +83,6 @@
       "import": "./dist/plugins/auth-token.mjs",
       "require": "./dist/plugins/auth-token.cjs"
     },
-
     "./plugins/observability": {
       "types": "./dist/plugins/observability.d.ts",
       "import": "./dist/plugins/observability.mjs",
