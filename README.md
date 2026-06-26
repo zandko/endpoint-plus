@@ -2,6 +2,9 @@
 
 An adapter-based HTTP endpoint toolkit and companion developer tooling.
 
+📦 **endpoint-plus**: [![npm version](https://img.shields.io/npm/v/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus) [![npm downloads](https://img.shields.io/npm/dm/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus)  
+🛠️ **endpoint-plus-devtools**: [![npm version](https://img.shields.io/npm/v/endpoint-plus-devtools.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus-devtools) [![npm downloads](https://img.shields.io/npm/dm/endpoint-plus-devtools.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus-devtools)
+
 ## Workspace Packages
 
 This monorepo contains the following packages:
