@@ -1,0 +1,10 @@
+export const DEVTOOLS_CONFIG = 'endpoint-plus-devtools:config';
+export const DEVTOOLS_ROUTE_MANIFEST = 'endpoint-plus-devtools:route-manifest';
+export const DEVTOOLS_TYPEGEN_PREVIEW = 'endpoint-plus-devtools:typegen:preview';
+export const DEVTOOLS_TYPEGEN_PREVIEW_RESULT = 'endpoint-plus-devtools:typegen:preview-result';
+export const DEVTOOLS_TYPEGEN_SAVE = 'endpoint-plus-devtools:typegen:save';
+export const DEVTOOLS_TYPEGEN_SAVED = 'endpoint-plus-devtools:typegen:saved';
+export const DEVTOOLS_TYPEGEN_OPEN = 'endpoint-plus-devtools:typegen:open';
+export const DEVTOOLS_PANEL_READY = 'endpoint-plus-devtools:panel:ready';
+export const DEVTOOLS_RESPONSE_CAPTURED = 'endpoint-plus-devtools:response-captured';
+export const DEVTOOLS_WINDOW_MESSAGE_SOURCE = 'endpoint-plus-devtools';

@@ -1,0 +1,53 @@
+{
+  "name": "endpoint-plus-devtools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./vite": {
+      "import": "./src/vite.ts",
+      "types": "./src/vite.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vue-tsc -b && vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.21.0",
+    "@vue/compiler-sfc": "^3.5.35",
+    "@vueuse/core": "^14.3.0",
+    "endpoint-plus": "workspace:*",
+
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "es-toolkit": "^1.47.0",
+    "fast-glob": "^3.3.3",
+    "launch-editor": "^2.14.1",
+    "mime-types": "^3.0.2",
+    "pluralize": "^8.0.0",
+    "reka-ui": "^2.10.0",
+    "ufo": "^1.6.4",
+    "vue": "^3.5.34"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/mime-types": "^3.0.1",
+    "@types/pluralize": "^0.0.33",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.1",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.8",
+    "vue-tsc": "^3.2.8"
+  }
+}

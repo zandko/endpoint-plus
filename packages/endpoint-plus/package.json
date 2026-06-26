@@ -1,0 +1,150 @@
+{
+  "name": "endpoint-plus",
+  "version": "1.0.0",
+  "description": "Adapter-based HTTP endpoint toolkit for structured API interactions.",
+  "author": "Zan <zandko@126.com>",
+  "files": [
+    "dist",
+    "README.md",
+    "skills"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.mjs",
+      "require": "./dist/browser.cjs"
+    },
+    "./extensions/polling": {
+      "types": "./dist/extensions/polling.d.ts",
+      "import": "./dist/extensions/polling.mjs",
+      "require": "./dist/extensions/polling.cjs"
+    },
+    "./extensions/sse": {
+      "types": "./dist/extensions/sse.d.ts",
+      "import": "./dist/extensions/sse.mjs",
+      "require": "./dist/extensions/sse.cjs"
+    },
+    "./extensions/workflow": {
+      "types": "./dist/extensions/workflow.d.ts",
+      "import": "./dist/extensions/workflow.mjs",
+      "require": "./dist/extensions/workflow.cjs"
+    },
+    "./miniapp": {
+      "types": "./dist/miniapp.d.ts",
+      "import": "./dist/miniapp.mjs",
+      "require": "./dist/miniapp.cjs"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.mjs",
+      "require": "./dist/node.cjs"
+    },
+    "./plugins/auth-token": {
+      "types": "./dist/plugins/auth-token.d.ts",
+      "import": "./dist/plugins/auth-token.mjs",
+      "require": "./dist/plugins/auth-token.cjs"
+    },
+
+    "./plugins/observability": {
+      "types": "./dist/plugins/observability.d.ts",
+      "import": "./dist/plugins/observability.mjs",
+      "require": "./dist/plugins/observability.cjs"
+    },
+    "./plugins/refresh-token": {
+      "types": "./dist/plugins/refresh-token.d.ts",
+      "import": "./dist/plugins/refresh-token.mjs",
+      "require": "./dist/plugins/refresh-token.cjs"
+    },
+    "./plugins/request-cache": {
+      "types": "./dist/plugins/request-cache.d.ts",
+      "import": "./dist/plugins/request-cache.mjs",
+      "require": "./dist/plugins/request-cache.cjs"
+    },
+    "./plugins/request-gate": {
+      "types": "./dist/plugins/request-gate.d.ts",
+      "import": "./dist/plugins/request-gate.mjs",
+      "require": "./dist/plugins/request-gate.cjs"
+    },
+    "./plugins/retry": {
+      "types": "./dist/plugins/retry.d.ts",
+      "import": "./dist/plugins/retry.mjs",
+      "require": "./dist/plugins/retry.cjs"
+    },
+    "./plugins/typegen": {
+      "types": "./dist/plugins/typegen.d.ts",
+      "import": "./dist/plugins/typegen.mjs",
+      "require": "./dist/plugins/typegen.cjs"
+    },
+    "./transports/axios": {
+      "types": "./dist/transports/axios.d.ts",
+      "import": "./dist/transports/axios.mjs",
+      "require": "./dist/transports/axios.cjs"
+    },
+    "./transports/fetch": {
+      "types": "./dist/transports/fetch.d.ts",
+      "import": "./dist/transports/fetch.mjs",
+      "require": "./dist/transports/fetch.cjs"
+    },
+    "./transports/miniapp": {
+      "types": "./dist/transports/miniapp.d.ts",
+      "import": "./dist/transports/miniapp.mjs",
+      "require": "./dist/transports/miniapp.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "es-toolkit": "^1.47.0",
+    "eventsource-parser": "^3.1.0",
+    "ofetch": "^1.5.1",
+    "ohash": "^2.0.11",
+    "ufo": "^1.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "axios": "^1.17.0",
+    "oxfmt": "^0.53.0",
+    "oxlint": "^1.68.0",
+    "quicktype-core": "^23.2.6",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "peerDependencies": {
+    "axios": ">=1.0.0",
+    "quicktype-core": ">=23.0.0"
+  },
+  "peerDependenciesMeta": {
+    "axios": {
+      "optional": true
+    },
+    "quicktype-core": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

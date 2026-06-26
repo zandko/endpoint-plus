@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.9632 0.0034 247.86);
+  --foreground: oklch(0.2101 0.0318 264.66);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2101 0.0318 264.66);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2101 0.0318 264.66);
+
+  --primary: oklch(0.7025 0.132 160.37);
+  --primary-foreground: oklch(1 0 0);
+
+  --secondary: oklch(0.9551 0.0168 168.5);
+  --secondary-foreground: oklch(0.4479 0.1083 151.33);
+
+  --muted: oklch(0.9417 0.0052 247.88);
+  --muted-foreground: oklch(0.551 0.0234 264.36);
+
+  --accent: oklch(0.9762 0.0124 164.81);
+  --accent-foreground: oklch(0.3925 0.0896 152.54);
+
+  --destructive: oklch(0.6368 0.2078 25.33);
+
+  --border: oklch(0.9276 0.0058 264.53);
+  --input: oklch(0.8717 0.0093 258.34);
+  --ring: oklch(0.7025 0.132 160.37);
+
+  /* Code editor background — neutral dark, not green-tinted */
+  --code-bg: oklch(0.2429 0.0304 283.91);
+  --code-fg: oklch(0.8787 0.0426 272.28);
+  --code-comment: oklch(0.5497 0.0345 277.1);
+
+  color-scheme: light;
+  font-family:
+    'Inter',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    @apply m-0 bg-background text-foreground;
+  }
+
+  /* Custom slim scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  /* Code block scrollbar — darker track */
+  .code-block::-webkit-scrollbar-thumb {
+    background: #3f3f5a;
+  }
+  .code-block::-webkit-scrollbar-thumb:hover {
+    background: #5b5b7a;
+  }
+}
+
+/* Method badge colors */
+.method-get {
+  @apply bg-emerald-100 text-emerald-700;
+}
+.method-post {
+  @apply bg-blue-100 text-blue-700;
+}
+.method-put {
+  @apply bg-amber-100 text-amber-700;
+}
+.method-patch {
+  @apply bg-orange-100 text-orange-700;
+}
+.method-delete {
+  @apply bg-red-100 text-red-700;
+}
+.method-other {
+  @apply bg-slate-100 text-slate-600;
+}
+
+/* Panel cross-fade — both panels animate simultaneously (no mode="out-in" gap) */
+.panel-enter-active,
+.panel-leave-active {
+  transition: opacity 0.18s ease;
+}
+.panel-enter-from,
+.panel-leave-to {
+  opacity: 0;
+}
+
+/* Slide-up for smaller UI elements (save result toast etc.) */
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+/* Table column heading label */
+.col-label {
+  @apply text-[0.6rem] font-bold uppercase tracking-widest text-muted-foreground;
+}
+
+/* Sidebar nav buttons */
+.nav-item {
+  @apply flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-all duration-150 hover:bg-muted hover:text-foreground;
+}
+
+.nav-item--active {
+  @apply bg-primary/10 text-primary;
+}

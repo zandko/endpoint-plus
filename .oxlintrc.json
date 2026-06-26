@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "pedantic": "off",
+    "perf": "off",
+    "style": "off",
+    "suspicious": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/.turbo/**",
+    "**/.git/**",
+    "**/.husky/_/**",
+    "pnpm-lock.yaml",
+    "*.log",
+    "*.tsbuildinfo"
+  ],
+  "options": {
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "error"
+  },
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "vue", "vitest"],
+  "rules": {
+    "eslint/no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "typescript/no-extraneous-class": "off",
+    "unicorn/no-empty-file": "off"
+  }
+}
