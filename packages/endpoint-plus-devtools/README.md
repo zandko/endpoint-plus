@@ -10,7 +10,6 @@ Vite companion DevTools panel and AST compiler integration for `endpoint-plus`.
 * 🔒 **Vite HMR Isolation**: Temporarily unwatches the generated type declarations file from Vite's `chokidar` watcher to prevent recursive hot-module replacement (HMR) page reloads.
 * 💻 **Launch Editor Integration**: Integrates with Node.js editor launchers to open VS Code, Cursor, or WebStorm directly to the specific line of code declaring the scanned API endpoint.
 
----
 
 ## Installation
 
@@ -26,7 +25,6 @@ To enable automated TypeScript schema inference from live JSON responses, also i
 pnpm add -D quicktype-core
 ```
 
----
 
 ## Configuration
 
@@ -60,8 +58,6 @@ export default defineConfig({
 | `base` | `string` | `"/__endpoint-plus-devtools"` | The base HTTP path where the DevTools panel UI will be served. |
 | `typegen.outputFile` | `string` | `"src/endpoint-types.d.ts"` | Target file path (relative to the Vite project root) where generated types are written. |
 
----
-
 ## How it Works
 
 ### 1. Codebase Scanning
@@ -91,9 +87,3 @@ The generated types immediately light up your code editor with type-safety:
 const users = await api.get('/api/users/123');
 //    ^? User
 ```
-
----
-
-## License
-
-MIT License.

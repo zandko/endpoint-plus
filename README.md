@@ -2,7 +2,7 @@
 
 An adapter-based HTTP endpoint toolkit and companion developer tooling.
 
-📦 **endpoint-plus**: [![npm version](https://img.shields.io/npm/v/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus) [![npm downloads](https://img.shields.io/npm/dm/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus)  
+📦 **endpoint-plus**: [![npm version](https://img.shields.io/npm/v/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus) [![npm downloads](https://img.shields.io/npm/dm/endpoint-plus.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus)
 🛠️ **endpoint-plus-devtools**: [![npm version](https://img.shields.io/npm/v/endpoint-plus-devtools.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus-devtools) [![npm downloads](https://img.shields.io/npm/dm/endpoint-plus-devtools.svg?style=flat-square)](https://www.npmjs.com/package/endpoint-plus-devtools)
 
 ## Workspace Packages
@@ -11,8 +11,6 @@ This monorepo contains the following packages:
 
 - **[endpoint-plus](./packages/endpoint-plus)**: The core TypeScript HTTP client library. Supports multiple runtimes (browser, Node.js, Mini-program), transports (Fetch, Axios), plugins (caching, retries, refresh token, rate-limiting, and more), and full compile-time type-safety.
 - **[endpoint-plus-devtools](./packages/endpoint-plus-devtools)**: Devtools companion panel and Vite compiler integration for debugging endpoints and auto-generating TypeScript type declarations from API request/response flows.
-
----
 
 ## Getting Started
 
@@ -52,8 +50,6 @@ To run TypeScript checks across the workspace:
 ```bash
 pnpm type-check
 ```
-
----
 
 ## Releasing and Versioning
 
@@ -105,8 +101,6 @@ To make these skills available to your agent, copy or link the `skills` director
    ```
 
 The agent will automatically discover the skill and load its instructions when you ask questions or perform tasks related to `endpoint-plus`.
-
----
 
 ## License
 
