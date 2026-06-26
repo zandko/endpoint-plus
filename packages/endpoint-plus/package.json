@@ -1,8 +1,18 @@
 {
   "name": "endpoint-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adapter-based HTTP endpoint toolkit for structured API interactions.",
   "author": "Zan <zandko@126.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/zandko/endpoint-plus#readme",
+  "bugs": {
+    "url": "https://github.com/zandko/endpoint-plus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zandko/endpoint-plus.git",
+    "directory": "packages/endpoint-plus"
+  },
   "files": [
     "dist",
     "README.md",
