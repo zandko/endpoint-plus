@@ -1,6 +1,6 @@
 {
   "name": "endpoint-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adapter-based HTTP endpoint toolkit for structured API interactions.",
   "author": "Zan <zandko@126.com>",
   "license": "MIT",
